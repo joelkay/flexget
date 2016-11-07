@@ -11,8 +11,9 @@ tasks:
       settings:
         default:
           begin: S01E01
+          thetvdb_lookup: yes
           set:
-            content_filename: "{{ tvdb_series_name }} - {{ tvdb_season }}x{{ tvdb_episode|pad(2) }}"
+            content_filename: "{{ series_name }} - {{ tvdb_season }}x{{ tvdb_episode|pad(2) }}"
             movedone: /media/pi/DeepStorage/TVShows/{{tvdb_series_name}}/Season {{tvdb_season}}/
       default:
         - Vikings
