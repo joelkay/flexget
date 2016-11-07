@@ -11,7 +11,6 @@ tasks:
       settings:
         default:
           begin: S01E01
-          thetvdb_lookup: yes
           set:
             content_filename: "{{ series_name }} - {{ tvdb_season }}x{{ tvdb_episode|pad(2) }}"
             movedone: /media/pi/DeepStorage/TVShows/{{series_name}}/Season {{tvdb_season}}/
