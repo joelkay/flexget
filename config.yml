@@ -1,6 +1,6 @@
 web_server: no
 
-presets:
+templates:
   global:
     free_space:
       path: /media/pi/DeepStorage
