@@ -6,11 +6,11 @@ templates:
       path: /media/pi/DeepStorage
       space: 50000
 
-    verify_ssl_certificates: no
+    #verify_ssl_certificates: no
 
     torrent_alive:
       min_seeds: 10
-      reject_for: 3 hours
+      reject_for: 1 hour
 
     content_filter:
       require:
