@@ -11,14 +11,15 @@ tasks:
       settings:
         default:
           begin: S01E01
+          thetvdb_lookup: yes
           set:
-            content_filename: "{{ series_name }} - {{ tvdb_season }}x{{ tvdb_episode|pad(2) }}"
-            movedone: /media/pi/DeepStorage/TVShows/{{series_name}}/Season {{tvdb_season}}/
+            content_filename: "{{ series_name }} - {{ series_id }} - {{ tvdb_ep_name|default('Unknown') }}  - {{ quality|upper }}"
+          movedone: /media/pi/DeepStorage/TVShows/{{series_name}}/Season {{tvdb_season}}/
       default:
         - Vikings
         #lit show
     deluge:
       magnetization_timeout: 60
-      path: /media/pi/DeepStorage/Incomplete/{{series_name}}/Season {{tvdb_season}}/
+      path: /media/pi/DeepStorage/Incomplete/
       label: tv
 
