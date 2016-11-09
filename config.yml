@@ -56,10 +56,10 @@ tasks:
         - next_series_episodes: yes
       from:
         - search_rss: https://zooqle.com/search?q={{search_term}}&fmt=rss 
-        - search_rss: http://extratorrent.cc/rss.xml?type=search&cid=8&search={{search_term}}
-        - search_rss: http://torrentproject.se/rss/{{search_term}}/
+       # - search_rss: http://extratorrent.cc/rss.xml?type=search&cid=8&search={{search_term}}
+       # - search_rss: http://torrentproject.se/rss/{{search_term}}/
         - search_rss: http://www.torrentdownloads.me/rss.xml?type=search&search={{search_term}}
-        #http://1337x.to/search/vikings/1/ another site but no rss
+       # http://1337x.to/search/vikings/1/ another site but no rss
         
     series:
       settings:
