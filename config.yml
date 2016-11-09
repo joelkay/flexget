@@ -58,7 +58,6 @@ tasks:
         - search_rss: https://zooqle.com/search?q={{search_term}}&fmt=rss 
 
     series:
-      thetvdb_lookup: yes
       settings:
         default:
           begin: S01E01
