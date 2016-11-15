@@ -82,14 +82,14 @@ templates:
 
 
     ##############################Search for torrents
-    inputs:
-      - rss:
-          url: https://zooqle.com/search?q={{search_term}}&fmt=rss 
-          all_entries: no
-      - rss:
-          url: '{{ secrets.rss.site2 }}'
-          all_entries: no
-
+    
+    discover:
+      what: 
+        - next_series_episodes:
+            from_start: yes
+      from:
+        - search_rss: https://zooqle.com/search?q={{search_term}}&fmt=rss 
+        - search_rss: '{{ secrets.rss.site2 }}'
 
 tasks:
   Series:
