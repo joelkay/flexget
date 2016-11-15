@@ -1,12 +1,8 @@
 secrets: secrets.yml
 schedules:
-  - tasks: fetch_series
+  - tasks: grab_series
     interval:
       minutes: 15
-
-  - tasks: get_series
-    interval:
-      minutes: 30
 
 templates:
   tv:
@@ -21,7 +17,21 @@ templates:
     
     discover:
       what: 
-        - entry_list: series
+        - configure_series:
+            settings:
+            quality: webdl|hdtv|webrip h264 720p
+            propers: no
+            set:
+                content_filename: "{{ series_name }} - {{ series_id }} - {{ tvdb_ep_name|default('Unknown') }}  - {{ quality|upper }}"
+                movedone: /media/pi/DeepStorage/TVShows/{{series_name}}/Season {{tvdb_season}}/
+                removeatratio: 2.0
+            from:
+              trakt_list:
+              account: '{{ secrets.trakt.account }}'
+              list: Following
+              type: shows
+              srip_dates: yes
+
       from:
         - search_rss: https://zooqle.com/search?q={{search_term}}&fmt=rss 
         - search_rss: '{{ secrets.rss.site2 }}'
@@ -81,28 +91,7 @@ templates:
     
 
 tasks:
-  get_series:
+  grab_series:
     template: tv
     priority: 2
 
-  fetch_series:
-    priority: 1
-
-    configure_series:
-      settings:
-        quality: webdl|hdtv|webrip h264 720p
-        propers: no
-        set:
-            content_filename: "{{ series_name }} - {{ series_id }} - {{ tvdb_ep_name|default('Unknown') }}  - {{ quality|upper }}"
-            movedone: /media/pi/DeepStorage/TVShows/{{series_name}}/Season {{tvdb_season}}/
-            removeatratio: 2.0
-      ##############################Grab Series from trakt
-      from:
-        trakt_list:
-          account: '{{ secrets.trakt.account }}'
-          list: Following
-          type: shows
-          strip_dates: yes
-
-    list_add:
-      - entry_list: series
