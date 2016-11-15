@@ -56,25 +56,32 @@ tasks:
         - next_series_episodes: yes
       from:
         - search_rss: https://zooqle.com/search?q={{search_term}}&fmt=rss 
-       # - search_rss: http://extratorrent.cc/rss.xml?type=search&cid=8&search={{search_term}}
-       # - search_rss: http://torrentproject.se/rss/{{search_term}}/
-       # - search_rss: http://www.torrentdownloads.me/rss.xml?type=search&search={{search_term}}
-       # http://1337x.to/search/vikings/1/ another site but no rss
+        - search_rss: https://immortalseed.me/rss.php?secret_key=f54e0e2cbc6d5eccb714e944c9629f70&feedtype=download&timezone=-12&showrows=100&categories=8,9
+        - search_rss: http://showrss.info/user/3786.rss?magnets=true&namespaces=true&name=null&quality=null&re=null
         
+    exists_series: 
+      - /media/pi/DeepStorage/Incomplete
+      - /media/pi/DeepStorage/TVShows
+        #dont duplicate
+
     series:
       settings:
         default:
-          begin: S01E01
           set:
             content_filename: "{{ series_name }} - {{ series_id }} - {{ tvdb_ep_name|default('Unknown') }}  - {{ quality|upper }}"
             movedone: /media/pi/DeepStorage/TVShows/{{series_name}}/Season {{tvdb_season}}/
-            removeatratio: 1.0
+            removeatratio: 2.0
 
       default:
-        - Vikings
-        #lit show
-
-
+        - Vikings:
+            begin: S03E06
+        - Game of Thrones:
+            begin: S06E01
+        - Dark Matter:
+            begin: S03E01
+        - Mars:
+            begin: S01E01
+        
     deluge:
       main_file_only: yes
       magnetization_timeout: 60

@@ -1,2 +1,0 @@
-# flexget
-flexget config

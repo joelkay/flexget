@@ -1,0 +1,327 @@
+2016-11-14 22:46 VERBOSE  manager                       Creating new database /home/pi/.flexget/db-config.sqlite - DO NOT INTERUPT ...
+2016-11-14 22:46 VERBOSE  task_queue                    There are 1 tasks to execute. Shutdown will commence when they have completed.
+2016-11-14 22:46 VERBOSE  discover      TV_Series       Discovering 4 titles ...
+2016-11-14 22:46 INFO     discover      TV_Series       Ignoring interval because of --discover-now
+2016-11-14 22:46 VERBOSE  discover      TV_Series       Searching for `Vikings S03E06` with plugin `search_rss` (1 of 3)
+2016-11-14 22:46 VERBOSE  discover      TV_Series       Searching for `Vikings S03E06` with plugin `search_rss` (1 of 3)
+2016-11-14 22:46 VERBOSE  discover      TV_Series       Searching for `Vikings S03E06` with plugin `search_rss` (1 of 3)
+2016-11-14 22:46 VERBOSE  discover      TV_Series       Searching for `Mars S01E01` with plugin `search_rss` (2 of 3)
+2016-11-14 22:46 VERBOSE  discover      TV_Series       Searching for `Mars S01E01` with plugin `search_rss` (2 of 3)
+2016-11-14 22:46 VERBOSE  discover      TV_Series       Searching for `Mars S01E01` with plugin `search_rss` (2 of 3)
+2016-11-14 22:46 VERBOSE  discover      TV_Series       Searching for `Game of Thrones S06E01` with plugin `search_rss` (3 of 3)
+2016-11-14 22:46 VERBOSE  discover      TV_Series       Searching for `Game of Thrones S06E01` with plugin `search_rss` (3 of 3)
+2016-11-14 22:46 VERBOSE  discover      TV_Series       Searching for `Game of Thrones S06E01` with plugin `search_rss` (3 of 3)
+2016-11-14 22:46 VERBOSE  details       TV_Series       Produced 407 entries.
+2016-11-14 22:46 INFO     parser_internal TV_Series       `Vikings Season 3 complete 1080p` appears to be an episode pack
+2016-11-14 22:46 INFO     parser_internal TV_Series       `The Universe (Seasons 1 to 5 - Complete)` appears to be an episode pack
+2016-11-14 22:46 VERBOSE  parser_internal TV_Series       `Vikings Season 3 complete 1080p` appears to be an episode pack
+2016-11-14 22:46 VERBOSE  parser_internal TV_Series       `The Universe (Seasons 1 to 5 - Complete)` appears to be an episode pack
+2016-11-14 22:46 VERBOSE  parser_internal TV_Series       `Vikings Season 3 complete 1080p` appears to be an episode pack
+2016-11-14 22:46 VERBOSE  parser_internal TV_Series       `The Universe (Seasons 1 to 5 - Complete)` appears to be an episode pack
+2016-11-14 22:46 VERBOSE  parser_internal TV_Series       `Vikings Season 3 complete 1080p` appears to be an episode pack
+2016-11-14 22:46 VERBOSE  parser_internal TV_Series       `The Universe (Seasons 1 to 5 - Complete)` appears to be an episode pack
+2016-11-14 22:46 VERBOSE  task          TV_Series       REJECTED: `Vikings S03e01-10 [Mux - 1080p - H264 - Ita Ac3 Eng Ac3 5.1 - SoftSub Ita Eng] DLMux By BlackBit` by regexp plugin because regexp '(s|d)ub(s|bed)?\b' matched field 'title'
+2016-11-14 22:46 VERBOSE  task          TV_Series       REJECTED: `Vikings S03e01-10, [BDmux - 1080p - H264 - Ita Ac3 Eng Dts 5.1 - Sub Ita Eng] Season Extended Complete` by regexp plugin because regexp '(s|d)ub(s|bed)?\b' matched field 'title'
+2016-11-14 22:46 VERBOSE  task          TV_Series       REJECTED: `Vikings S03e01-10, [BDmux - 720p - H264 - Ita Ac3 Eng Dts 5.1 - Sub Ita Eng] Version EXtended Complete` by regexp plugin because regexp '(s|d)ub(s|bed)?\b' matched field 'title'
+2016-11-14 22:46 VERBOSE  task          TV_Series       REJECTED: `Vikings S03e01-10, [BDmux - XviD - Ita Eng Ac3 - Sub Ita Eng] Version Extended Complete By BlackBit` by regexp plugin because regexp '(s|d)ub(s|bed)?\b' matched field 'title'
+2016-11-14 22:46 VERBOSE  task          TV_Series       REJECTED: `Вселенная / The Universe / Сезон 1-3 / Все серии / Сезон 4 / Серии 1-10 (12) [2007-2009, документальный, научно-популярный, SRT] Sub (Rus, Eng)` by regexp plugin because regexp '(s|d)ub(s|bed)?\b' matched field 'title'
+2016-11-14 22:46 VERBOSE  task          TV_Series       REJECTED: `Game of Thrones Season - 6 S06 HDTV ESubs x264-SKYRG` by regexp plugin because regexp '(s|d)ub(s|bed)?\b' matched field 'title'
+2016-11-14 22:46 VERBOSE  task          TV_Series       REJECTED: `Game of Thrones - Il Trono di Spade S06e01[Mux - 720p - H264 - Ita Eng Ac3 - Sub Ita Eng] DLMux GiuseppeTnT Littlelinx` by regexp plugin because regexp '(s|d)ub(s|bed)?\b' matched field 'title'
+2016-11-14 22:46 VERBOSE  task          TV_Series       REJECTED: `Game Of Thrones S06e01 [Mux - 1080p - H264 - Ita Ac3 Eng Ac3 5.1 - Sub Ita Eng] DLMux by Fratposa` by regexp plugin because regexp '(s|d)ub(s|bed)?\b' matched field 'title'
+2016-11-14 22:46 VERBOSE  task          TV_Series       REJECTED: `Game of Thrones S06E01 SweSub HDTV x264-KILLERS mp4` by regexp plugin because regexp '(s|d)ub(s|bed)?\b' matched field 'title'
+2016-11-14 22:46 VERBOSE  task          TV_Series       ACCEPTED: `Vikings S03E06 720p HDTV AAC x264-PSYPHER` by series plugin because choosing best available quality
+2016-11-14 22:46 VERBOSE  task          TV_Series       REJECTED: `Vikings S03 Complete Season 3 EXTENDED BluRay 720p x265 HEVC [nate_666]` by series plugin because too much in the future from latest downloaded episode S03E06. See `--disable-tracking` if this should be downloaded.
+2016-11-14 22:46 VERBOSE  task          TV_Series       REJECTED: `Mars S01E01 Novo Mundo 720p HDTV x264-ASCENDANCE` by series plugin because nuked
+2016-11-14 22:46 VERBOSE  task          TV_Series       REJECTED: `Mars S01E01 Novo Mundo HDTV x264-ASCENDANCE` by series plugin because nuked
+2016-11-14 22:46 VERBOSE  task          TV_Series       ACCEPTED: `Mars 2016 S01E01 Novo Mundo 1080p WEB-DL DD5 1 H264-Coo7[rartv]` by series plugin because choosing best available quality
+2016-11-14 22:46 VERBOSE  task          TV_Series       ACCEPTED: `Game Of Thrones S06E01 The Red Woman Web-DL 1080p 10bit 5.1 x265 HEVC-Qman[UTR]` by series plugin because choosing best available quality
+2016-11-14 22:46 INFO     parser_internal TV_Series       Title `Vikings` looks like series `Vikings` but cannot find any series numbering.
+2016-11-14 22:46 INFO     download      TV_Series       Downloading: Vikings S03E06 720p HDTV AAC x264-PSYPHER
+2016-11-14 22:46 INFO     download      TV_Series       Downloading: Mars 2016 S01E01 Novo Mundo 1080p WEB-DL DD5 1 H264-Coo7[rartv]
+2016-11-14 22:46 INFO     download      TV_Series       Downloading: Game Of Thrones S06E01 The Red Woman Web-DL 1080p 10bit 5.1 x265 HEVC-Qman[UTR]
+2016-11-14 22:46 VERBOSE  details       TV_Series       Summary - Accepted: 3 (Rejected: 12 Undecided: 392 Failed: 0)
+2016-11-14 22:46 INFO     remember_rej  TV_Series       Remembering rejection of `Vikings S03E06 720p HDTV AAC x264-PSYPHER` for 180 minutes
+2016-11-14 22:46 VERBOSE  task          TV_Series       REJECTED: `Vikings S03E06 720p HDTV AAC x264-PSYPHER` by torrent_alive plugin because tracker(s) had < 10 required seeds. (0)
+2016-11-14 22:46 INFO     task          TV_Series       Plugin torrent_alive has requested task to be ran again after execution has completed. Reason: Not enough seeds
+2016-11-14 22:47 WARNING  requests.packages.urllib3.connectionpool                 Retrying (Retry(total=0, connect=None, read=None, redirect=0)) after connection broken by 'ConnectTimeoutError(<requests.packages.urllib3.connection.HTTPConnection object at 0x72783df0>, 'Connection to tracker.files.fm timed out. (connect timeout=30)')': /scrape?info_hash=%E8%1Fg%9D%D7d6%B2X%3D%B7%9D%C7%B7%95%A6%05%D1%BA%AC
+2016-11-14 22:47 INFO     remember_rej  TV_Series       Remembering rejection of `Mars 2016 S01E01 Novo Mundo 1080p WEB-DL DD5 1 H264-Coo7[rartv]` for 180 minutes
+2016-11-14 22:47 VERBOSE  task          TV_Series       REJECTED: `Mars 2016 S01E01 Novo Mundo 1080p WEB-DL DD5 1 H264-Coo7[rartv]` by torrent_alive plugin because tracker(s) had < 10 required seeds. (5)
+2016-11-14 22:48 WARNING  requests.packages.urllib3.connectionpool                 Retrying (Retry(total=0, connect=None, read=None, redirect=0)) after connection broken by 'ConnectTimeoutError(<requests.packages.urllib3.connection.HTTPConnection object at 0x7278eed0>, 'Connection to open.acgtracker.com timed out. (connect timeout=30)')': /scrape?info_hash=h%EF%C3%0D_%FBup%1D%A42%AD%19%BCA%8A%23%21%85%3E
+2016-11-14 22:48 INFO     deluge        TV_Series       Connecting to daemon at localhost:58846..
+2016-11-14 22:48 INFO     deluge        TV_Series       Connected to daemon at 127.0.0.1:58846..
+2016-11-14 22:48 VERBOSE  deluge        TV_Series       Adding Game Of Thrones S06E01 The Red Woman Web-DL 1080p 10bit 5.1 x265 HEVC-Qman[UTR] to deluge.
+2016-11-14 22:48 INFO     deluge        TV_Series       Game Of Thrones S06E01 The Red Woman Web-DL 1080p 10bit 5.1 x265 HEVC-Qman[UTR] successfully added to deluge.
+2016-11-14 22:48 INFO     deluge        TV_Series       Connection lost to daemon at localhost:58846 reason: Connection was closed cleanly.
+2016-11-14 22:48 INFO     task          TV_Series       Rerunning the task in case better resolution can be achieved.
+2016-11-14 22:48 VERBOSE  discover      TV_Series       Ignored duplicate title `Game of Thrones S06E02`
+2016-11-14 22:48 VERBOSE  discover      TV_Series       Ignored duplicate title `Game of Thrones S06E02`
+2016-11-14 22:48 VERBOSE  discover      TV_Series       Discovering 1 titles ...
+2016-11-14 22:48 INFO     discover      TV_Series       Ignoring interval because of --discover-now
+2016-11-14 22:48 VERBOSE  discover      TV_Series       Searching for `Game of Thrones S06E02` with plugin `search_rss` (1 of 1)
+2016-11-14 22:48 VERBOSE  discover      TV_Series       Searching for `Game of Thrones S06E02` with plugin `search_rss` (1 of 1)
+2016-11-14 22:48 VERBOSE  discover      TV_Series       Searching for `Game of Thrones S06E02` with plugin `search_rss` (1 of 1)
+2016-11-14 22:48 VERBOSE  details       TV_Series       Produced 138 entries.
+2016-11-14 22:48 VERBOSE  task          TV_Series       REJECTED: `Game of Thrones Season - 6 S06 HDTV ESubs x264-SKYRG` by regexp plugin because regexp '(s|d)ub(s|bed)?\b' matched field 'title'
+2016-11-14 22:48 VERBOSE  task          TV_Series       REJECTED: `Game of Thrones S06E02 HC SWESUB 720p HDTV x264 mp4` by regexp plugin because regexp '(s|d)ub(s|bed)?\b' matched field 'title'
+2016-11-14 22:48 VERBOSE  task          TV_Series       REJECTED: `Game of Thrones - Il Trono di Spade S06e02[Mux - 720p - H264 - Ita Eng Ac3 - Sub Ita Eng] DLMux GiuseppeTnT Littlelinx` by regexp plugin because regexp '(s|d)ub(s|bed)?\b' matched field 'title'
+2016-11-14 22:48 VERBOSE  task          TV_Series       REJECTED: `Game Of Thrones - Il Trono Di Spade S06e02 [Mux 1080p - H264 - Ita Eng Ac3 - Subs] DLMux by Fratposa` by regexp plugin because regexp '(s|d)ub(s|bed)?\b' matched field 'title'
+2016-11-14 22:48 VERBOSE  task          TV_Series       ACCEPTED: `MARS.S01E01.Novo.Mundo.1080p.HDTV.X264-DEADPOOL` by series plugin because choosing best available quality
+2016-11-14 22:48 VERBOSE  task          TV_Series       REJECTED: `Game Of Thrones S06E02 FRENCH 720p AHDTV x264-LiBERTY mkv` by series plugin because nuked
+2016-11-14 22:48 VERBOSE  task          TV_Series       REJECTED: `Game of Thrones S06E02 720p HDTV x264-FLEET[rartv]` by series plugin because nuked
+2016-11-14 22:48 VERBOSE  task          TV_Series       REJECTED: `Game of Thrones S06E02 720p HDTV x264-Belex - Dual Audio - Dublado` by series plugin because nuked
+2016-11-14 22:48 VERBOSE  task          TV_Series       REJECTED: `Game of Thrones 6x02 (720p-HDTV-x264-FLEET)[VTV]` by series plugin because nuked
+2016-11-14 22:48 VERBOSE  task          TV_Series       REJECTED: `Game of Thrones S06E02 720p HDTV x264 BLUDV` by series plugin because nuked
+2016-11-14 22:48 VERBOSE  task          TV_Series       REJECTED: `Game of Thrones S06E02 720p HDTV x264-FLEET [eztv]` by series plugin because nuked
+2016-11-14 22:48 VERBOSE  task          TV_Series       REJECTED: `Game of Thrones S06E02 HDTV XviD x264 Avi(AFG) -][State][-` by series plugin because nuked
+2016-11-14 22:48 VERBOSE  task          TV_Series       REJECTED: `Game of Thrones S06E02 HDTV x264-FLEET [eztv]` by series plugin because nuked
+2016-11-14 22:48 VERBOSE  task          TV_Series       REJECTED: `Game of Thrones S06E02 HDTV x264-FLEET[rartv]` by series plugin because nuked
+2016-11-14 22:48 VERBOSE  task          TV_Series       ACCEPTED: `Game of Thrones S06E02 Home (1080p Web x265 HEVC 10bit AAC 5.1 Joy)[UTR]` by series plugin because choosing best available quality
+2016-11-14 22:48 INFO     download      TV_Series       Downloading: Game of Thrones S06E02 Home (1080p Web x265 HEVC 10bit AAC 5.1 Joy)[UTR]
+2016-11-14 22:48 INFO     download      TV_Series       Downloading: MARS.S01E01.Novo.Mundo.1080p.HDTV.X264-DEADPOOL
+2016-11-14 22:48 VERBOSE  details       TV_Series       Summary - Accepted: 2 (Rejected: 13 Undecided: 123 Failed: 0)
+2016-11-14 22:49 WARNING  requests.packages.urllib3.connectionpool                 Retrying (Retry(total=0, connect=None, read=None, redirect=0)) after connection broken by 'ConnectTimeoutError(<requests.packages.urllib3.connection.HTTPConnection object at 0x7274ecf0>, 'Connection to open.acgtracker.com timed out. (connect timeout=30)')': /scrape?info_hash=%1Dy%0C%88%13%9C%04%0E3%3E%F2%A0%FB%A2%9E%88%FBoo6
+2016-11-14 22:49 WARNING  torrent_alive TV_Series       Error decoding tracker response: syntax error: 
+2016-11-14 22:49 INFO     remember_rej  TV_Series       Remembering rejection of `MARS.S01E01.Novo.Mundo.1080p.HDTV.X264-DEADPOOL` for 180 minutes
+2016-11-14 22:49 VERBOSE  task          TV_Series       REJECTED: `MARS.S01E01.Novo.Mundo.1080p.HDTV.X264-DEADPOOL` by torrent_alive plugin because tracker(s) had < 10 required seeds. (0)
+2016-11-14 22:49 INFO     task          TV_Series       Plugin torrent_alive has requested task to be ran again after execution has completed. Reason: Not enough seeds
+2016-11-14 22:49 INFO     deluge        TV_Series       Connecting to daemon at localhost:58846..
+2016-11-14 22:49 INFO     deluge        TV_Series       Connected to daemon at 127.0.0.1:58846..
+2016-11-14 22:49 VERBOSE  deluge        TV_Series       Adding Game of Thrones S06E02 Home (1080p Web x265 HEVC 10bit AAC 5.1 Joy)[UTR] to deluge.
+2016-11-14 22:49 INFO     deluge        TV_Series       Game of Thrones S06E02 Home (1080p Web x265 HEVC 10bit AAC 5.1 Joy)[UTR] successfully added to deluge.
+2016-11-14 22:49 INFO     deluge        TV_Series       Connection lost to daemon at localhost:58846 reason: Connection was closed cleanly.
+2016-11-14 22:49 INFO     task          TV_Series       Rerunning the task in case better resolution can be achieved.
+2016-11-14 22:49 VERBOSE  discover      TV_Series       Ignored duplicate title `Game of Thrones S06E03`
+2016-11-14 22:49 VERBOSE  discover      TV_Series       Ignored duplicate title `Game of Thrones S06E03`
+2016-11-14 22:49 VERBOSE  discover      TV_Series       Discovering 1 titles ...
+2016-11-14 22:49 INFO     discover      TV_Series       Ignoring interval because of --discover-now
+2016-11-14 22:49 VERBOSE  discover      TV_Series       Searching for `Game of Thrones S06E03` with plugin `search_rss` (1 of 1)
+2016-11-14 22:49 VERBOSE  discover      TV_Series       Searching for `Game of Thrones S06E03` with plugin `search_rss` (1 of 1)
+2016-11-14 22:49 VERBOSE  discover      TV_Series       Searching for `Game of Thrones S06E03` with plugin `search_rss` (1 of 1)
+2016-11-14 22:49 VERBOSE  details       TV_Series       Produced 139 entries.
+2016-11-14 22:49 VERBOSE  task          TV_Series       REJECTED: `MARS.S01E01.Novo.Mundo.1080p.HDTV.X264-DEADPOOL` by remember_rejected plugin because rejected on behalf of torrent_alive plugin: Tracker(s) had < 10 required seeds. (0)
+2016-11-14 22:49 VERBOSE  task          TV_Series       REJECTED: `Game of Thrones Season - 6 S06 HDTV ESubs x264-SKYRG` by regexp plugin because regexp '(s|d)ub(s|bed)?\b' matched field 'title'
+2016-11-14 22:49 VERBOSE  task          TV_Series       REJECTED: `Juego de tronos -Game of Thrones 6x03 720p VOSE mkv English Sub. Spanish Español` by regexp plugin because regexp '(s|d)ub(s|bed)?\b' matched field 'title'
+2016-11-14 22:49 VERBOSE  task          TV_Series       REJECTED: `Game of Thrones S06E03 HC SWESUB 720p HDTV x264 mp4` by regexp plugin because regexp '(s|d)ub(s|bed)?\b' matched field 'title'
+2016-11-14 22:49 VERBOSE  task          TV_Series       REJECTED: `Game Of Thrones S06e03 [Mux 1080p - H264 - Ita Eng Ac3 - Subs] DLMux by Fratposa` by regexp plugin because regexp '(s|d)ub(s|bed)?\b' matched field 'title'
+2016-11-14 22:49 VERBOSE  task          TV_Series       REJECTED: `Game of Thrones S06E03 HDTV x264[Eng-Sub] Mp4-RBB[State]` by regexp plugin because regexp '(s|d)ub(s|bed)?\b' matched field 'title'
+2016-11-14 22:49 VERBOSE  task          TV_Series       REJECTED: `Game of Thrones - Il Trono di Spade S06e03[Mux - 720p - H264 - Ita Eng Ac3 - Sub Ita Eng] DLMux GiuseppeTnT Littlelinx` by regexp plugin because regexp '(s|d)ub(s|bed)?\b' matched field 'title'
+2016-11-14 22:49 VERBOSE  task          TV_Series       ACCEPTED: `MARS.S01E01.Novo.Mundo.PROPER.720p.HDTV.X264-DEADPOOL` by series plugin because choosing best available quality
+2016-11-14 22:49 VERBOSE  task          TV_Series       REJECTED: `Game of Thrones S06E03 720p HDTV x264-AVS[rartv]` by series plugin because nuked
+2016-11-14 22:49 VERBOSE  task          TV_Series       REJECTED: `Game of Thrones S06E03 720p HDTV x264-Belex - Dual Audio` by series plugin because nuked
+2016-11-14 22:49 VERBOSE  task          TV_Series       REJECTED: `Game of Thrones S06E03 720p HDTV x264 DUAL-WWW BLUDV COM mkv` by series plugin because nuked
+2016-11-14 22:49 VERBOSE  task          TV_Series       REJECTED: `Game of Thrones S06E03 720p HDTV x264-AVS` by series plugin because nuked
+2016-11-14 22:49 VERBOSE  task          TV_Series       REJECTED: `Game of Thrones S06E03 720p HDTV x264-AVS [eztv]` by series plugin because nuked
+2016-11-14 22:49 VERBOSE  task          TV_Series       REJECTED: `Game of Thrones 6x03 (720p-HDTV-x264-AVS)[VTV]` by series plugin because nuked
+2016-11-14 22:49 VERBOSE  task          TV_Series       REJECTED: `Game of Thrones S06E03 SUBFRENCH 720p HDTV x264-SH0W mkv` by series plugin because nuked
+2016-11-14 22:49 VERBOSE  task          TV_Series       REJECTED: `Game of Thrones S06E03 720p HDTV x264-TOPKEK` by series plugin because nuked
+2016-11-14 22:49 VERBOSE  task          TV_Series       ACCEPTED: `Game of Thrones S06E03 Oathbreaker 1080p WEB-DL 6CH x264-PSA mkv` by series plugin because choosing best available quality
+2016-11-14 22:50 INFO     download      TV_Series       Downloading: Game of Thrones S06E03 Oathbreaker 1080p WEB-DL 6CH x264-PSA mkv
+2016-11-14 22:50 INFO     download      TV_Series       Downloading: MARS.S01E01.Novo.Mundo.PROPER.720p.HDTV.X264-DEADPOOL
+2016-11-14 22:50 VERBOSE  details       TV_Series       Summary - Accepted: 2 (Rejected: 15 Undecided: 122 Failed: 0)
+2016-11-14 22:50 WARNING  torrent_alive TV_Series       Error decoding tracker response: syntax error: 
+2016-11-14 22:50 INFO     remember_rej  TV_Series       Remembering rejection of `MARS.S01E01.Novo.Mundo.PROPER.720p.HDTV.X264-DEADPOOL` for 180 minutes
+2016-11-14 22:50 VERBOSE  task          TV_Series       REJECTED: `MARS.S01E01.Novo.Mundo.PROPER.720p.HDTV.X264-DEADPOOL` by torrent_alive plugin because tracker(s) had < 10 required seeds. (0)
+2016-11-14 22:50 INFO     task          TV_Series       Plugin torrent_alive has requested task to be ran again after execution has completed. Reason: Not enough seeds
+2016-11-14 22:50 INFO     deluge        TV_Series       Connecting to daemon at localhost:58846..
+2016-11-14 22:50 INFO     deluge        TV_Series       Connected to daemon at 127.0.0.1:58846..
+2016-11-14 22:50 VERBOSE  deluge        TV_Series       Adding Game of Thrones S06E03 Oathbreaker 1080p WEB-DL 6CH x264-PSA mkv to deluge.
+2016-11-14 22:50 INFO     deluge        TV_Series       Game of Thrones S06E03 Oathbreaker 1080p WEB-DL 6CH x264-PSA mkv successfully added to deluge.
+2016-11-14 22:50 INFO     deluge        TV_Series       Connection lost to daemon at localhost:58846 reason: Connection was closed cleanly.
+2016-11-14 22:50 INFO     task          TV_Series       Rerunning the task in case better resolution can be achieved.
+2016-11-14 22:50 VERBOSE  discover      TV_Series       Ignored duplicate title `Game of Thrones S06E04`
+2016-11-14 22:50 VERBOSE  discover      TV_Series       Ignored duplicate title `Game of Thrones S06E04`
+2016-11-14 22:50 VERBOSE  discover      TV_Series       Discovering 1 titles ...
+2016-11-14 22:50 INFO     discover      TV_Series       Ignoring interval because of --discover-now
+2016-11-14 22:50 VERBOSE  discover      TV_Series       Searching for `Game of Thrones S06E04` with plugin `search_rss` (1 of 1)
+2016-11-14 22:50 VERBOSE  discover      TV_Series       Searching for `Game of Thrones S06E04` with plugin `search_rss` (1 of 1)
+2016-11-14 22:50 VERBOSE  discover      TV_Series       Searching for `Game of Thrones S06E04` with plugin `search_rss` (1 of 1)
+2016-11-14 22:50 VERBOSE  details       TV_Series       Produced 136 entries.
+2016-11-14 22:50 VERBOSE  task          TV_Series       REJECTED: `MARS.S01E01.Novo.Mundo.PROPER.720p.HDTV.X264-DEADPOOL` by remember_rejected plugin because rejected on behalf of torrent_alive plugin: Tracker(s) had < 10 required seeds. (0)
+2016-11-14 22:50 VERBOSE  task          TV_Series       REJECTED: `MARS.S01E01.Novo.Mundo.1080p.HDTV.X264-DEADPOOL` by remember_rejected plugin because rejected on behalf of torrent_alive plugin: Tracker(s) had < 10 required seeds. (0)
+2016-11-14 22:50 VERBOSE  task          TV_Series       REJECTED: `Il Trono Di Spade - Game Of Thrones S06e04 [Mux 1080p - H264 - Ita Eng Ac3 - Subs] DLMux by Fratposa` by regexp plugin because regexp '(s|d)ub(s|bed)?\b' matched field 'title'
+2016-11-14 22:50 VERBOSE  task          TV_Series       REJECTED: `Game of Thrones - Il Trono di Spade S06e04[Mux - 720p - H264 - Ita Eng Ac3 - Sub Ita Eng] DLMux GiuseppeTnT Littlelinx` by regexp plugin because regexp '(s|d)ub(s|bed)?\b' matched field 'title'
+2016-11-14 22:50 VERBOSE  task          TV_Series       REJECTED: `Game of Thrones Season - 6 S06 HDTV ESubs x264-SKYRG` by regexp plugin because regexp '(s|d)ub(s|bed)?\b' matched field 'title'
+2016-11-14 22:50 VERBOSE  task          TV_Series       ACCEPTED: `MARS.S01E01.Novo.Mundo.PROPER.XviD-AFG` by series plugin because choosing best available quality
+2016-11-14 22:50 VERBOSE  task          TV_Series       ACCEPTED: `Game of Thrones S06E04 Book of the Stranger (1080p Web x265 HEVC 10bit AAC 5.1 Joy)[UTR]` by series plugin because choosing best available quality
+2016-11-14 22:50 INFO     download      TV_Series       Downloading: Game of Thrones S06E04 Book of the Stranger (1080p Web x265 HEVC 10bit AAC 5.1 Joy)[UTR]
+2016-11-14 22:50 INFO     download      TV_Series       Downloading: MARS.S01E01.Novo.Mundo.PROPER.XviD-AFG
+2016-11-14 22:50 VERBOSE  details       TV_Series       Summary - Accepted: 2 (Rejected: 5 Undecided: 129 Failed: 0)
+2016-11-14 22:50 WARNING  torrent_alive TV_Series       Error decoding tracker response: syntax error: 
+2016-11-14 22:50 INFO     remember_rej  TV_Series       Remembering rejection of `MARS.S01E01.Novo.Mundo.PROPER.XviD-AFG` for 180 minutes
+2016-11-14 22:50 VERBOSE  task          TV_Series       REJECTED: `MARS.S01E01.Novo.Mundo.PROPER.XviD-AFG` by torrent_alive plugin because tracker(s) had < 10 required seeds. (0)
+2016-11-14 22:50 INFO     task          TV_Series       Plugin torrent_alive has requested task to be ran again after execution has completed. Reason: Not enough seeds
+2016-11-14 22:50 INFO     deluge        TV_Series       Connecting to daemon at localhost:58846..
+2016-11-14 22:50 INFO     deluge        TV_Series       Connected to daemon at 127.0.0.1:58846..
+2016-11-14 22:50 VERBOSE  deluge        TV_Series       Adding Game of Thrones S06E04 Book of the Stranger (1080p Web x265 HEVC 10bit AAC 5.1 Joy)[UTR] to deluge.
+2016-11-14 22:50 INFO     deluge        TV_Series       Game of Thrones S06E04 Book of the Stranger (1080p Web x265 HEVC 10bit AAC 5.1 Joy)[UTR] successfully added to deluge.
+2016-11-14 22:50 INFO     deluge        TV_Series       Connection lost to daemon at localhost:58846 reason: Connection was closed cleanly.
+2016-11-14 22:50 INFO     task          TV_Series       Rerunning the task in case better resolution can be achieved.
+2016-11-14 22:50 VERBOSE  discover      TV_Series       Ignored duplicate title `Game of Thrones S06E05`
+2016-11-14 22:50 VERBOSE  discover      TV_Series       Ignored duplicate title `Game of Thrones S06E05`
+2016-11-14 22:50 VERBOSE  discover      TV_Series       Discovering 1 titles ...
+2016-11-14 22:50 INFO     discover      TV_Series       Ignoring interval because of --discover-now
+2016-11-14 22:50 VERBOSE  discover      TV_Series       Searching for `Game of Thrones S06E05` with plugin `search_rss` (1 of 1)
+2016-11-14 22:50 VERBOSE  discover      TV_Series       Searching for `Game of Thrones S06E05` with plugin `search_rss` (1 of 1)
+2016-11-14 22:50 VERBOSE  discover      TV_Series       Searching for `Game of Thrones S06E05` with plugin `search_rss` (1 of 1)
+2016-11-14 22:50 VERBOSE  details       TV_Series       Produced 137 entries.
+2016-11-14 22:50 INFO     parser_internal TV_Series       `Game of thrones S06E05 1080p AC3 5 1 FullEngSubs Sphinctone1 mkv` appears to be an episode pack
+2016-11-14 22:50 VERBOSE  parser_internal TV_Series       `Game of thrones S06E05 1080p AC3 5 1 FullEngSubs Sphinctone1 mkv` appears to be an episode pack
+2016-11-14 22:50 VERBOSE  parser_internal TV_Series       `Game of thrones S06E05 1080p AC3 5 1 FullEngSubs Sphinctone1 mkv` appears to be an episode pack
+2016-11-14 22:50 VERBOSE  parser_internal TV_Series       `Game of thrones S06E05 1080p AC3 5 1 FullEngSubs Sphinctone1 mkv` appears to be an episode pack
+2016-11-14 22:50 VERBOSE  task          TV_Series       REJECTED: `MARS.S01E01.Novo.Mundo.PROPER.720p.HDTV.X264-DEADPOOL` by remember_rejected plugin because rejected on behalf of torrent_alive plugin: Tracker(s) had < 10 required seeds. (0)
+2016-11-14 22:50 VERBOSE  task          TV_Series       REJECTED: `MARS.S01E01.Novo.Mundo.PROPER.XviD-AFG` by remember_rejected plugin because rejected on behalf of torrent_alive plugin: Tracker(s) had < 10 required seeds. (0)
+2016-11-14 22:50 VERBOSE  task          TV_Series       REJECTED: `MARS.S01E01.Novo.Mundo.1080p.HDTV.X264-DEADPOOL` by remember_rejected plugin because rejected on behalf of torrent_alive plugin: Tracker(s) had < 10 required seeds. (0)
+2016-11-14 22:50 VERBOSE  task          TV_Series       REJECTED: `Game of Thrones Season - 6 S06 HDTV ESubs x264-SKYRG` by regexp plugin because regexp '(s|d)ub(s|bed)?\b' matched field 'title'
+2016-11-14 22:50 VERBOSE  task          TV_Series       REJECTED: `Game Of Thrones S06e05 [Mux - 1080p - H264 - Ita Ac3 Eng Ac3 5.1 - Sub Ita Eng] DLMux by Fratposa` by regexp plugin because regexp '(s|d)ub(s|bed)?\b' matched field 'title'
+2016-11-14 22:50 VERBOSE  task          TV_Series       REJECTED: `Game of thrones S06E05 1080p AC3 5 1 FullEngSubs Sphinctone1 mkv` by regexp plugin because regexp '(s|d)ub(s|bed)?\b' matched field 'title'
+2016-11-14 22:50 VERBOSE  task          TV_Series       REJECTED: `Game of Thrones 6x05 720p VOSE Juego de tronos .mkv Sub. Spanish Español` by regexp plugin because regexp '(s|d)ub(s|bed)?\b' matched field 'title'
+2016-11-14 22:50 VERBOSE  task          TV_Series       REJECTED: `Game of Thrones S06E05 HC SWESUB 720p HDTV x264 mp4` by regexp plugin because regexp '(s|d)ub(s|bed)?\b' matched field 'title'
+2016-11-14 22:50 VERBOSE  task          TV_Series       REJECTED: `Game of Thrones - Il Trono di Spade S06e05[Mux - 720p - H264 - Ita Eng Ac3 - Sub Ita Eng] DLMux GiuseppeTnT Littlelinx` by regexp plugin because regexp '(s|d)ub(s|bed)?\b' matched field 'title'
+2016-11-14 22:50 VERBOSE  task          TV_Series       REJECTED: `Game of Thrones 6x05 (720p-HDTV-x264-AVS)[VTV]` by series plugin because nuked
+2016-11-14 22:50 VERBOSE  task          TV_Series       REJECTED: `Game of Thrones S06E05 720p HDTV x264 DUAL BLUDV` by series plugin because nuked
+2016-11-14 22:50 VERBOSE  task          TV_Series       REJECTED: `Game of Thrones S06E05 HC SUBFRENCH 720p HDTV x264-Visual mkv` by series plugin because nuked
+2016-11-14 22:50 VERBOSE  task          TV_Series       REJECTED: `Game of Thrones S06E05 720p HDTV x264-Belex - Dual Audio - Dublado` by series plugin because nuked
+2016-11-14 22:50 VERBOSE  task          TV_Series       REJECTED: `Game of Thrones S06E05 720p HDTV x264-AVS [eztv]` by series plugin because nuked
+2016-11-14 22:50 VERBOSE  task          TV_Series       ACCEPTED: `Game of Thrones S06E05 The Door (1080p Web x265 HEVC 10bit AAC 5.1 Joy)[UTR]` by series plugin because choosing best available quality
+2016-11-14 22:50 INFO     download      TV_Series       Downloading: Game of Thrones S06E05 The Door (1080p Web x265 HEVC 10bit AAC 5.1 Joy)[UTR]
+2016-11-14 22:50 VERBOSE  details       TV_Series       Summary - Accepted: 1 (Rejected: 14 Undecided: 122 Failed: 0)
+2016-11-14 22:50 INFO     deluge        TV_Series       Connecting to daemon at localhost:58846..
+2016-11-14 22:50 INFO     deluge        TV_Series       Connected to daemon at 127.0.0.1:58846..
+2016-11-14 22:50 VERBOSE  deluge        TV_Series       Adding Game of Thrones S06E05 The Door (1080p Web x265 HEVC 10bit AAC 5.1 Joy)[UTR] to deluge.
+2016-11-14 22:50 INFO     deluge        TV_Series       Game of Thrones S06E05 The Door (1080p Web x265 HEVC 10bit AAC 5.1 Joy)[UTR] successfully added to deluge.
+2016-11-14 22:50 INFO     deluge        TV_Series       Connection lost to daemon at localhost:58846 reason: Connection was closed cleanly.
+2016-11-14 22:50 INFO     task          TV_Series       Plugin next_series_episodes has requested task to be ran again after execution has completed. Reason: Look for next episode
+2016-11-14 22:50 INFO     task          TV_Series       Rerunning the task in case better resolution can be achieved.
+2016-11-14 22:50 VERBOSE  discover      TV_Series       Ignored duplicate title `Game of Thrones S06E06`
+2016-11-14 22:50 VERBOSE  discover      TV_Series       Ignored duplicate title `Game of Thrones S06E06`
+2016-11-14 22:50 VERBOSE  discover      TV_Series       Discovering 1 titles ...
+2016-11-14 22:50 INFO     discover      TV_Series       Ignoring interval because of --discover-now
+2016-11-14 22:50 VERBOSE  discover      TV_Series       Searching for `Game of Thrones S06E06` with plugin `search_rss` (1 of 1)
+2016-11-14 22:50 VERBOSE  discover      TV_Series       Searching for `Game of Thrones S06E06` with plugin `search_rss` (1 of 1)
+2016-11-14 22:50 VERBOSE  discover      TV_Series       Searching for `Game of Thrones S06E06` with plugin `search_rss` (1 of 1)
+2016-11-14 22:50 VERBOSE  details       TV_Series       Produced 138 entries.
+2016-11-14 22:50 VERBOSE  task          TV_Series       REJECTED: `MARS.S01E01.Novo.Mundo.PROPER.720p.HDTV.X264-DEADPOOL` by remember_rejected plugin because rejected on behalf of torrent_alive plugin: Tracker(s) had < 10 required seeds. (0)
+2016-11-14 22:50 VERBOSE  task          TV_Series       REJECTED: `MARS.S01E01.Novo.Mundo.PROPER.XviD-AFG` by remember_rejected plugin because rejected on behalf of torrent_alive plugin: Tracker(s) had < 10 required seeds. (0)
+2016-11-14 22:50 VERBOSE  task          TV_Series       REJECTED: `MARS.S01E01.Novo.Mundo.1080p.HDTV.X264-DEADPOOL` by remember_rejected plugin because rejected on behalf of torrent_alive plugin: Tracker(s) had < 10 required seeds. (0)
+2016-11-14 22:50 VERBOSE  task          TV_Series       REJECTED: `Game of Thrones Season - 6 S06 HDTV ESubs x264-SKYRG` by regexp plugin because regexp '(s|d)ub(s|bed)?\b' matched field 'title'
+2016-11-14 22:50 VERBOSE  task          TV_Series       REJECTED: `Game Of Thrones S06e06 [Mux 1080p - H264 - Ita Eng Ac3 - Subs] DLMux by Fratposa` by regexp plugin because regexp '(s|d)ub(s|bed)?\b' matched field 'title'
+2016-11-14 22:50 VERBOSE  task          TV_Series       REJECTED: `Game of Thrones - Juego de tronos 6x06 VOSE HD 720p .mkv English Sub. Spanish Español` by regexp plugin because regexp '(s|d)ub(s|bed)?\b' matched field 'title'
+2016-11-14 22:50 VERBOSE  task          TV_Series       REJECTED: `Game of Thrones - Il Trono di Spade S06e06[Mux - 720p - H264 - Ita Eng Ac3 - Sub Ita Eng] DLMux GiuseppeTnT Littlelinx` by regexp plugin because regexp '(s|d)ub(s|bed)?\b' matched field 'title'
+2016-11-14 22:50 VERBOSE  task          TV_Series       ACCEPTED: `Game of Thrones S06E06 Blood of My Blood (1080p Web x265 HEVC 10bit AAC 5.1 Joy)[UTR]` by series plugin because choosing best available quality
+2016-11-14 22:50 INFO     download      TV_Series       Downloading: Game of Thrones S06E06 Blood of My Blood (1080p Web x265 HEVC 10bit AAC 5.1 Joy)[UTR]
+2016-11-14 22:50 VERBOSE  details       TV_Series       Summary - Accepted: 1 (Rejected: 7 Undecided: 130 Failed: 0)
+2016-11-14 22:50 INFO     remember_rej  TV_Series       Remembering rejection of `Game of Thrones S06E06 Blood of My Blood (1080p Web x265 HEVC 10bit AAC 5.1 Joy)[UTR]` for 180 minutes
+2016-11-14 22:50 VERBOSE  task          TV_Series       REJECTED: `Game of Thrones S06E06 Blood of My Blood (1080p Web x265 HEVC 10bit AAC 5.1 Joy)[UTR]` by torrent_alive plugin because tracker(s) had < 10 required seeds. (7)
+2016-11-14 22:50 INFO     task          TV_Series       Plugin torrent_alive has requested task to be ran again after execution has completed. Reason: Not enough seeds
+2016-11-14 22:50 INFO     task          TV_Series       Rerunning the task in case better resolution can be achieved.
+2016-11-14 22:50 WARNING  discover      TV_Series       Input next_series_episodes did not return anything
+2016-11-14 22:50 VERBOSE  discover      TV_Series       Discovering 0 titles ...
+2016-11-14 22:50 INFO     discover      TV_Series       Ignoring interval because of --discover-now
+2016-11-14 22:50 VERBOSE  details       TV_Series       Task didn't produce any entries.
+2016-11-14 22:50 VERBOSE  details       TV_Series       Summary - Accepted: 0 (Rejected: 0 Undecided: 0 Failed: 0)
+2016-11-14 22:52 INFO     manager                       Daemonizing...
+2016-11-14 22:52 INFO     manager                       Daemonize complete. New PID: 1045
+2016-11-14 22:52 INFO     scheduler                     No schedules defined in config. Defaulting to run all tasks on a 1 hour interval.
+2016-11-14 22:52 INFO     scheduler                     Starting scheduler
+2016-11-14 23:00 INFO     log_once                      Good! Your crontab environment seems to be same as terminal.
+2016-11-14 23:00 INFO     manager       TV_Series       Running database cleanup.
+2016-11-14 23:00 INFO     db_vacuum     TV_Series       Running VACUUM on database to improve performance and decrease db size.
+2016-11-14 23:00 INFO     db_analyze    TV_Series       Running ANALYZE on database to improve performance.
+2016-11-14 23:00 INFO     scheduler     TV_Series       No schedules defined in config. Defaulting to run all tasks on a 1 hour interval.
+2016-11-14 23:01 INFO     manager                       Got SIGTERM. Shutting down.
+2016-11-14 23:01 INFO     manager                       Daemonizing...
+2016-11-14 23:01 INFO     manager                       Daemonize complete. New PID: 1051
+2016-11-14 23:01 INFO     scheduler                     No schedules defined in config. Defaulting to run all tasks on a 1 hour interval.
+2016-11-14 23:01 INFO     scheduler                     Starting scheduler
+2016-11-14 23:52 INFO     download      TV_Series       Downloading: Vikings S03E06.720p HDTV x264-KILLERS [GloDLS]
+2016-11-14 23:52 INFO     download      TV_Series       Downloading: MARS S01E01 Novo Mundo 1080p HDTV x264-DEADPOOL
+2016-11-14 23:52 INFO     remember_rej  TV_Series       Remembering rejection of `Vikings S03E06.720p HDTV x264-KILLERS [GloDLS]` for 180 minutes
+2016-11-14 23:52 INFO     task          TV_Series       Plugin torrent_alive has requested task to be ran again after execution has completed. Reason: Not enough seeds
+2016-11-14 23:52 WARNING  torrent_alive                 Socket Error: timed out
+2016-11-14 23:52 INFO     deluge        TV_Series       Connecting to daemon at localhost:58846..
+2016-11-14 23:52 INFO     deluge        TV_Series       Connected to daemon at 127.0.0.1:58846..
+2016-11-14 23:52 INFO     deluge        TV_Series       MARS S01E01 Novo Mundo 1080p HDTV x264-DEADPOOL successfully added to deluge.
+2016-11-14 23:52 INFO     deluge        TV_Series       Connection lost to daemon at localhost:58846 reason: Connection was closed cleanly.
+2016-11-14 23:52 INFO     task          TV_Series       Rerunning the task in case better resolution can be achieved.
+2016-11-14 23:52 INFO     task          TV_Series       Plugin next_series_episodes has requested task to be ran again after execution has completed. Reason: Look for next season
+2016-11-14 23:52 INFO     task          TV_Series       Rerunning the task in case better resolution can be achieved.
+2016-11-15 00:00 INFO     task          TV_Series       Plugin next_series_episodes has requested task to be ran again after execution has completed. Reason: Look for next season
+2016-11-15 00:00 INFO     task          TV_Series       Rerunning the task in case better resolution can be achieved.
+2016-11-15 00:52 INFO     task          TV_Series       Plugin next_series_episodes has requested task to be ran again after execution has completed. Reason: Look for next season
+2016-11-15 00:52 INFO     task          TV_Series       Rerunning the task in case better resolution can be achieved.
+2016-11-15 01:00 INFO     task          TV_Series       Plugin next_series_episodes has requested task to be ran again after execution has completed. Reason: Look for next season
+2016-11-15 01:00 INFO     task          TV_Series       Rerunning the task in case better resolution can be achieved.
+2016-11-15 01:52 INFO     task          TV_Series       Plugin next_series_episodes has requested task to be ran again after execution has completed. Reason: Look for next season
+2016-11-15 01:52 INFO     parser_internal TV_Series       Title `Game of Thrones` looks like series `Game of Thrones` but cannot find any series numbering.
+2016-11-15 01:52 INFO     download      TV_Series       Downloading: Game of Thrones S06E06 Blood of My Blood (1080p Web x265 HEVC 10bit AAC 5.1 Joy)[UTR]
+2016-11-15 01:52 WARNING  requests.packages.urllib3.connectionpool                 Retrying (Retry(total=0, connect=None, read=None, redirect=0)) after connection broken by 'ConnectTimeoutError(<requests.packages.urllib3.connection.HTTPConnection object at 0x717d1750>, 'Connection to open.acgtracker.com timed out. (connect timeout=30)')': /scrape?info_hash=%19c%94%5B%DEH%F0%2A%BDj%94%E7%C9c%E4%26%275%BB%CD
+2016-11-15 01:52 INFO     deluge        TV_Series       Connecting to daemon at localhost:58846..
+2016-11-15 01:52 INFO     deluge        TV_Series       Connected to daemon at 127.0.0.1:58846..
+2016-11-15 01:52 INFO     deluge        TV_Series       Game of Thrones S06E06 Blood of My Blood (1080p Web x265 HEVC 10bit AAC 5.1 Joy)[UTR] successfully added to deluge.
+2016-11-15 01:52 INFO     deluge        TV_Series       Connection lost to daemon at localhost:58846 reason: Connection was closed cleanly.
+2016-11-15 01:52 INFO     task          TV_Series       Rerunning the task in case better resolution can be achieved.
+2016-11-15 01:53 INFO     download      TV_Series       Downloading: Game Of Thrones S06E07 The Broken Man Web-DL 1080p 10bit 5.1 x265 HEVC-Qman[UTR]
+2016-11-15 01:53 INFO     deluge        TV_Series       Connecting to daemon at localhost:58846..
+2016-11-15 01:53 INFO     deluge        TV_Series       Connected to daemon at 127.0.0.1:58846..
+2016-11-15 01:53 INFO     deluge        TV_Series       Game Of Thrones S06E07 The Broken Man Web-DL 1080p 10bit 5.1 x265 HEVC-Qman[UTR] successfully added to deluge.
+2016-11-15 01:53 INFO     deluge        TV_Series       Connection lost to daemon at localhost:58846 reason: Connection was closed cleanly.
+2016-11-15 01:53 INFO     task          TV_Series       Plugin next_series_episodes has requested task to be ran again after execution has completed. Reason: Look for next episode
+2016-11-15 01:53 INFO     task          TV_Series       Rerunning the task in case better resolution can be achieved.
+2016-11-15 01:53 INFO     download      TV_Series       Downloading: Game of Thrones S06E08 No One PROPER 1080p WEB-DL HEVC DD5.1 x265 [1080P][HEVC]
+2016-11-15 01:53 WARNING  requests.packages.urllib3.connectionpool                 Retrying (Retry(total=0, connect=None, read=None, redirect=0)) after connection broken by 'ConnectTimeoutError(<requests.packages.urllib3.connection.HTTPConnection object at 0x71498a30>, 'Connection to open.acgtracker.com timed out. (connect timeout=30)')': /scrape?info_hash=%9E%AF%B3%FE%11%5D%06O%E5%D6%7D%D1%94m%F75%16%94%E5c
+2016-11-15 01:53 INFO     deluge        TV_Series       Connecting to daemon at localhost:58846..
+2016-11-15 01:53 INFO     deluge        TV_Series       Connected to daemon at 127.0.0.1:58846..
+2016-11-15 01:53 INFO     deluge        TV_Series       Game of Thrones S06E08 No One PROPER 1080p WEB-DL HEVC DD5.1 x265 [1080P][HEVC] successfully added to deluge.
+2016-11-15 01:53 INFO     deluge        TV_Series       Connection lost to daemon at localhost:58846 reason: Connection was closed cleanly.
+2016-11-15 01:53 INFO     task          TV_Series       Plugin next_series_episodes has requested task to be ran again after execution has completed. Reason: Look for next episode
+2016-11-15 01:53 INFO     task          TV_Series       Rerunning the task in case better resolution can be achieved.
+2016-11-15 01:54 INFO     download      TV_Series       Downloading: Game of Thrones S06E09 Battle of the Bastards (1080p Web x265 HEVC 10bit AAC 5.1 Joy)[UTR]
+2016-11-15 01:54 WARNING  requests.packages.urllib3.connectionpool                 Retrying (Retry(total=0, connect=None, read=None, redirect=0)) after connection broken by 'ConnectTimeoutError(<requests.packages.urllib3.connection.HTTPConnection object at 0x7143c730>, 'Connection to announce.xxx-tracker.com timed out. (connect timeout=30)')': /scrape?info_hash=%E5P%EAM%5DH%25%8B%AB%1C%86%03%C5%3A%BD%F8%CA%F99%E3
+2016-11-15 01:54 WARNING  requests.packages.urllib3.connectionpool                 Retrying (Retry(total=0, connect=None, read=None, redirect=0)) after connection broken by 'ConnectTimeoutError(<requests.packages.urllib3.connection.HTTPConnection object at 0x7143eb50>, 'Connection to open.acgtracker.com timed out. (connect timeout=30)')': /scrape?info_hash=%E5P%EAM%5DH%25%8B%AB%1C%86%03%C5%3A%BD%F8%CA%F99%E3
+2016-11-15 01:55 INFO     deluge        TV_Series       Connecting to daemon at localhost:58846..
+2016-11-15 01:55 INFO     deluge        TV_Series       Connected to daemon at 127.0.0.1:58846..
+2016-11-15 01:55 INFO     deluge        TV_Series       Game of Thrones S06E09 Battle of the Bastards (1080p Web x265 HEVC 10bit AAC 5.1 Joy)[UTR] successfully added to deluge.
+2016-11-15 01:55 INFO     deluge        TV_Series       Connection lost to daemon at localhost:58846 reason: Connection was closed cleanly.
+2016-11-15 01:55 INFO     task          TV_Series       Plugin next_series_episodes has requested task to be ran again after execution has completed. Reason: Look for next episode
+2016-11-15 01:55 INFO     task          TV_Series       Rerunning the task in case better resolution can be achieved.
+2016-11-15 01:55 INFO     download      TV_Series       Downloading: Game of Thrones S06E10 The Winds of Winter (1080p Web x265 HEVC 10bit AAC 5.1 Joy)[UTR]
+2016-11-15 01:55 INFO     deluge        TV_Series       Connecting to daemon at localhost:58846..
+2016-11-15 01:55 INFO     deluge        TV_Series       Connected to daemon at 127.0.0.1:58846..
+2016-11-15 01:55 INFO     deluge        TV_Series       Game of Thrones S06E10 The Winds of Winter (1080p Web x265 HEVC 10bit AAC 5.1 Joy)[UTR] successfully added to deluge.
+2016-11-15 01:55 INFO     deluge        TV_Series       Connection lost to daemon at localhost:58846 reason: Connection was closed cleanly.
+2016-11-15 01:55 INFO     task          TV_Series       Plugin next_series_episodes has requested task to be ran again after execution has completed. Reason: Look for next episode
+2016-11-15 01:55 INFO     task          TV_Series       Rerunning the task in case better resolution can be achieved.
+2016-11-15 01:55 INFO     task          TV_Series       Plugin next_series_episodes has requested task to be ran again after execution has completed. Reason: Look for next season
+2016-11-15 01:55 INFO     task          TV_Series       Rerunning the task in case better resolution can be achieved.
+2016-11-15 02:00 INFO     task          TV_Series       Plugin next_series_episodes has requested task to be ran again after execution has completed. Reason: Look for next season
+2016-11-15 02:00 INFO     task          TV_Series       Rerunning the task in case better resolution can be achieved.
+2016-11-15 02:52 INFO     task          TV_Series       Plugin next_series_episodes has requested task to be ran again after execution has completed. Reason: Look for next season
+2016-11-15 02:52 INFO     task          TV_Series       Rerunning the task in case better resolution can be achieved.
+2016-11-15 03:00 INFO     task          TV_Series       Plugin next_series_episodes has requested task to be ran again after execution has completed. Reason: Look for next season
+2016-11-15 03:00 INFO     task          TV_Series       Rerunning the task in case better resolution can be achieved.
+2016-11-15 03:52 INFO     task          TV_Series       Plugin next_series_episodes has requested task to be ran again after execution has completed. Reason: Look for next season
+2016-11-15 03:52 INFO     task          TV_Series       Rerunning the task in case better resolution can be achieved.
+2016-11-15 04:00 INFO     task          TV_Series       Plugin next_series_episodes has requested task to be ran again after execution has completed. Reason: Look for next season
+2016-11-15 04:00 INFO     task          TV_Series       Rerunning the task in case better resolution can be achieved.
+2016-11-15 04:52 INFO     task          TV_Series       Plugin next_series_episodes has requested task to be ran again after execution has completed. Reason: Look for next season
+2016-11-15 04:52 INFO     download      TV_Series       Downloading: Vikings S03E06 720p HDTV AAC x264-PSYPHER
+2016-11-15 04:52 INFO     remember_rej  TV_Series       Remembering rejection of `Vikings S03E06 720p HDTV AAC x264-PSYPHER` for 180 minutes
+2016-11-15 04:52 INFO     task          TV_Series       Rerunning the task in case better resolution can be achieved.
+2016-11-15 05:00 INFO     task          TV_Series       Plugin next_series_episodes has requested task to be ran again after execution has completed. Reason: Look for next season
+2016-11-15 05:00 INFO     task          TV_Series       Rerunning the task in case better resolution can be achieved.
+2016-11-15 05:52 INFO     task          TV_Series       Plugin next_series_episodes has requested task to be ran again after execution has completed. Reason: Look for next season
+2016-11-15 05:52 INFO     task          TV_Series       Rerunning the task in case better resolution can be achieved.
+2016-11-15 06:00 INFO     task          TV_Series       Plugin next_series_episodes has requested task to be ran again after execution has completed. Reason: Look for next season
+2016-11-15 06:00 INFO     task          TV_Series       Rerunning the task in case better resolution can be achieved.
+2016-11-15 06:52 INFO     task          TV_Series       Plugin next_series_episodes has requested task to be ran again after execution has completed. Reason: Look for next season
+2016-11-15 06:52 INFO     task          TV_Series       Rerunning the task in case better resolution can be achieved.
+2016-11-15 07:00 INFO     task          TV_Series       Plugin next_series_episodes has requested task to be ran again after execution has completed. Reason: Look for next season
+2016-11-15 07:00 INFO     task          TV_Series       Rerunning the task in case better resolution can be achieved.
+2016-11-15 07:52 INFO     task          TV_Series       Plugin next_series_episodes has requested task to be ran again after execution has completed. Reason: Look for next season
+2016-11-15 07:52 INFO     task          TV_Series       Rerunning the task in case better resolution can be achieved.
+2016-11-15 08:00 INFO     task          TV_Series       Plugin next_series_episodes has requested task to be ran again after execution has completed. Reason: Look for next season
+2016-11-15 08:00 INFO     task          TV_Series       Rerunning the task in case better resolution can be achieved.
+2016-11-15 08:52 INFO     task          TV_Series       Plugin next_series_episodes has requested task to be ran again after execution has completed. Reason: Look for next season
+2016-11-15 08:52 INFO     task          TV_Series       Rerunning the task in case better resolution can be achieved.
+2016-11-15 09:00 INFO     task          TV_Series       Plugin next_series_episodes has requested task to be ran again after execution has completed. Reason: Look for next season
+2016-11-15 09:00 INFO     task          TV_Series       Rerunning the task in case better resolution can be achieved.
