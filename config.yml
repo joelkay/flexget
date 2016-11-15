@@ -31,8 +31,8 @@ templates:
           type: shows
           strip_dates: yes
 
-        list_add:
-          - entry_list: series
+    list_add:
+      - entry_list: series
 
     #################################Reject all series that exist
     exists_series:
