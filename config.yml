@@ -29,7 +29,7 @@ templates:
           account: '{{ secrets.trakt.account }}'
           list: Following
           type: shows
-          srip_dates: yes
+          strip_dates: yes
 
 
     discover:
