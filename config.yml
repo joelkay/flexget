@@ -167,8 +167,8 @@ tasks:
 
 #################################Reject all series that exist
     exists_series: 
-      - '/media/pi/DeepStorage/Incomplete/{{series_name}}'
-      - '/media/pi/DeepStorage/TVShows/{{series_name}}'
+        - '/media/pi/DeepStorage/Incomplete/{{series_name}}'
+        - '/media/pi/DeepStorage/TVShows/{{series_name}}'
       allow_different_qualities: yes
         #dont duplicate if we have it already
    
