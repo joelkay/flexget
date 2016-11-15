@@ -64,8 +64,7 @@ tasks:
         - next_trakt_episodes:
             account: '{{ secrets.trakt.account }}'
             list: Following
-            type: shows #grab shows
-            
+
       from:
         - search_rss: https://zooqle.com/search?q={{search_term}}&fmt=rss 
         - search_rss: '{{ secrets.rss.site1 }}' 
