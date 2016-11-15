@@ -95,3 +95,109 @@ schedules:
   - tasks: [grab_series]
     interval:
       minutes: 30
+web_server: no
+secrets: secrets.yml
+templates:
+  global:
+    free_space:
+      path: /media/pi/DeepStorage
+      space: 50000
+      #make sure there is enough space 
+
+    #verify_ssl_certificates: no
+
+    torrent_alive:
+      min_seeds: 10
+      reject_for: 3 hours
+
+    content_filter:
+      require:
+        - '*.avi'
+        - '*.mkv'
+        - '*.mpg'
+        - '*.mp4'
+        - '*.r0*'
+        - '*.part0*'
+
+      reject:
+        - 'password.txt'
+        - '*.wmv'
+
+    regexp:
+      reject:
+        - (s|d)ub(s|bed)?\b: {from: title}
+        - \b(duo|tri|quadri|tetra|penta)logy\b: {from: title}
+        - \b3-?D\b: {from: title}
+        - \btrailer\b: {from: title}
+        - \bR5\b: {from: title}
+        - \bWEBSCR\b: {from: title}
+        - \bscreener\b: {from: title}
+        - \bTS\b: {from: title}
+        - \bCam\b: {from: title}
+        - '{C_P}': {from: title}
+        - TrTd TeaM: {from: title}
+        - \[TNTVillage\]: {from: title}
+        - \bASAP\b: {from: title}
+
+      
+
+tasks:
+
+
+  grab_series:
+
+    thetvdb_lookup: yes
+
+    set_series_begin: yes
+
+##############################Grab Series from trakt
+    configure_series:
+      from:
+        trakt_list:
+          account: '{{ secrets.trakt.account }}'
+          list: Following
+          type: shows
+      settings:
+        upgrade: yes
+        set:
+            content_filename: "{{ series_name }} - {{ series_id }} - {{ tvdb_ep_name|default('Unknown') }}  - {{ quality|upper }}"
+            movedone: /media/pi/DeepStorage/TVShows/{{series_name}}/Season {{tvdb_season}}/
+            removeatratio: 2.0
+
+
+#################################Reject all series that exist
+    exists_series: 
+      - '/media/pi/DeepStorage/Incomplete/{{series_name}}'
+      - '/media/pi/DeepStorage/TVShows/{{series_name}}'
+      allow_different_qualities: yes
+        #dont duplicate if we have it already
+   
+##############################Search for torrents
+    discover:
+      what:
+        - next_series_episodes:
+            backfill: yes
+      from:
+        - search_rss: https://zooqle.com/search?q={{search_term}}&fmt=rss 
+        - search_rss: '{{ secrets.rss.site1 }}' 
+        - search_rss: '{{ secrets.rss.site2 }}'
+
+##############################Send to deluge
+    deluge:
+      main_file_only: yes
+      magnetization_timeout: 60
+      path: /media/pi/DeepStorage/Incomplete/
+      label: TVShows
+
+# If you are using daemon mode, make sure you schedule the tasks in the right order, so that the begin episode gets set before it tries to download your shows
+schedules:
+  - tasks: [get_series, grab_series]
+    interval:
+      minutes: 30
+
+
+schedules:
+  # Run every task once an hour
+  - tasks: [grab_series]
+    interval:
+      minutes: 30
