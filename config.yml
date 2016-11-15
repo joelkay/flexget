@@ -50,7 +50,7 @@ tasks:
   get_series:
     seen: local
     trakt_list:
-      account: '\{{ secrets.trakt.account }}'
+      account: '{{ secrets.trakt.account }}'
       list: Following #my trakt tv list
       type: episodes
 
@@ -58,11 +58,11 @@ tasks:
     set_series_begin: yes
 
     list_remove:
-      account: '\{{ secrets.trakt.account }}'
+      account: '{{ secrets.trakt.account }}'
       list: Following
 
     list_add:
-      account: '\{{ secrets.trakt.account }}'
+      account: '{{ secrets.trakt.account }}'
       list: Following
       type: shows
 
@@ -74,7 +74,7 @@ tasks:
     configure_series:
       from:
         trakt_list:
-          account: '\{{ secrets.trakt.account }}' 
+          account: '{{ secrets.trakt.account }}' 
           list: Following
           type: shows
 
