@@ -49,7 +49,6 @@ tasks:
   # It will set the `begin` series option for that show, then remove the episode and re-add it to your `My TV Shows` list as a show.
   get_series:
     seen: local
-
     trakt_list:
       account: '\{{ secrets.trakt.account }}'
       list: Following #my trakt tv list
