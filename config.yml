@@ -52,7 +52,7 @@ tasks:
     trakt_list:
       account: '{{ secrets.trakt.account }}'
       list: Following #my trakt tv list
-      type: episodes
+      type: shows
 
     accept_all: yes
     set_series_begin: yes
@@ -66,7 +66,7 @@ tasks:
         trakt_list:
           account: '{{ secrets.trakt.account }}' 
           list: Following
-          type: episodes #grab episodes
+          type: shows #grab shows
           
     exists_series: 
       - /media/pi/DeepStorage/Incomplete
