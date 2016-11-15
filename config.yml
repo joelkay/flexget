@@ -46,7 +46,7 @@ tasks:
   
   grab_series:
 
-    thetvdb_lookup: yes
+    #thetvdb_lookup: yes
     set_series_begin: yes
 
 ##############################Grab Series from trakt
