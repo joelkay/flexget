@@ -26,10 +26,10 @@ templates:
             removeatratio: 0.5
       from:
         trakt_list:
-        account: '{{ secrets.trakt.account }}'
-        list: Following
-        type: shows
-        srip_dates: yes
+          account: '{{ secrets.trakt.account }}'
+          list: Following
+          type: shows
+          srip_dates: yes
 
 
     discover:
