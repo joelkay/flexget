@@ -15,23 +15,26 @@ templates:
       path: /media/pi/DeepStorage/Incomplete/
       label: TVShows
     
+    configure_series:
+      settings:
+      quality: webdl|hdtv|webrip h264 720p
+      propers: no
+      identified_by: ep
+      set:
+          content_filename: "{{ series_name }} - {{ series_id }} - {{ tvdb_ep_name|default('Unknown') }}  - {{ quality|upper }}"
+          movedone: /media/pi/DeepStorage/TVShows/{{series_name}}/Season {{tvdb_season}}/
+          removeatratio: 0.5
+      from:
+        trakt_list:
+        account: '{{ secrets.trakt.account }}'
+        list: Following
+        type: shows
+        srip_dates: yes
+
+
     discover:
       what: 
-        - configure_series:
-            settings:
-            quality: webdl|hdtv|webrip h264 720p
-            propers: no
-            set:
-                content_filename: "{{ series_name }} - {{ series_id }} - {{ tvdb_ep_name|default('Unknown') }}  - {{ quality|upper }}"
-                movedone: /media/pi/DeepStorage/TVShows/{{series_name}}/Season {{tvdb_season}}/
-                removeatratio: 2.0
-            from:
-              trakt_list:
-              account: '{{ secrets.trakt.account }}'
-              list: Following
-              type: shows
-              srip_dates: yes
-
+        - next_series_episodes: yes
       from:
         - search_rss: https://zooqle.com/search?q={{search_term}}&fmt=rss 
         - search_rss: '{{ secrets.rss.site2 }}'
@@ -84,11 +87,6 @@ templates:
       #apikey: PUSHBULLET_API_KEY
       #title: "[F](/F) {{series_name}} {{series_id}}"
       #body: "{{title}}\n\nSize: {{content_size}}MB"
-
-
-    ##############################Search for torrents
-    
-    
 
 tasks:
   grab_series:
