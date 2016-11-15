@@ -100,3 +100,14 @@ schedules:
   - tasks: [get_series, grab_series]
     interval:
       minutes: 30
+
+
+schedules:
+  # Run every task once an hour
+  - tasks: [get_series]
+    interval:
+      minutes: 30
+  # Run task_b every 30 minutes
+  - tasks: [grab_series]
+    interval:
+      minutes: 35
