@@ -45,20 +45,8 @@ templates:
       
 
 tasks:
-  # This task will look for episodes you have added to your `My TV Shows` list at trakt.
-  # It will set the `begin` series option for that show, then remove the episode and re-add it to your `My TV Shows` list as a show.
-  get_series:
-    seen: local
-    trakt_list:
-      account: '{{ secrets.trakt.account }}'
-      list: Following #my trakt tv list
-      type: shows
-
-    accept_all: yes
-    set_series_begin: yes
 
   grab_series:
-
     thetvdb_lookup: yes
     
     configure_series:
@@ -67,6 +55,10 @@ tasks:
           account: '{{ secrets.trakt.account }}' 
           list: Following
           type: shows #grab shows
+          
+        accept_all: yes
+        set_series_begin: yes
+
           
     exists_series: 
       - /media/pi/DeepStorage/Incomplete
@@ -104,10 +96,6 @@ schedules:
 
 schedules:
   # Run every task once an hour
-  - tasks: [get_series]
-    interval:
-      minutes: 30
-  # Run task_b every 30 minutes
   - tasks: [grab_series]
     interval:
-      minutes: 35
+      minutes: 30
