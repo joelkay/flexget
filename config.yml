@@ -51,7 +51,6 @@ tasks:
 
     thetvdb_lookup: yes
 
-    accept_all: yes
     set_series_begin: yes
 
     exists_series: 
