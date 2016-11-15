@@ -73,12 +73,10 @@ tasks:
 ##############################Search for torrents
     discover:
       what:
-        - next_trakt_episodes:
-           account: '{{ secrets.trakt.account }}'
-           list: Following
+        - next_series_episodes: yes
       from:
         - search_rss: https://zooqle.com/search?q={{search_term}}&fmt=rss 
-        - search_rss: '{{ secrets.rss.site1 }}' 
+        #- search_rss: '{{ secrets.rss.site1 }}' 
         - search_rss: '{{ secrets.rss.site2 }}'
 
 ##############################Send to deluge
@@ -88,15 +86,8 @@ tasks:
       path: /media/pi/DeepStorage/Incomplete/
       label: TVShows
 
-# If you are using daemon mode, make sure you schedule the tasks in the right order, so that the begin episode gets set before it tries to download your shows
 schedules:
-  - tasks: [get_series, grab_series]
-    interval:
-      minutes: 30
-
-
-schedules:
-  # Run every task once an hour
+  # Run every task every 30m
   - tasks: [grab_series]
     interval:
       minutes: 30
