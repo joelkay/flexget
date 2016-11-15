@@ -52,20 +52,10 @@ tasks:
     trakt_list:
       account: '{{ secrets.trakt.account }}'
       list: Following #my trakt tv list
-      type: episodes
+      type: shows
 
     accept_all: yes
     set_series_begin: yes
-
-    list_remove:
-      account: '{{ secrets.trakt.account }}'
-      list: Following
-
-    list_add:
-      account: '{{ secrets.trakt.account }}'
-      list: Following
-      type: shows
-
 
   grab_series:
 
