@@ -167,9 +167,7 @@ tasks:
 #################################Reject all series that exist
     exists_series:
       allow_different_qualities: yes 
-      - '/media/pi/DeepStorage/Incomplete/{{series_name}}'
-      - '/media/pi/DeepStorage/TVShows/{{series_name}}'
-      
+      path: '/media/pi/DeepStorage/TVShows/{{series_name}}'
         #dont duplicate if we have it already
    
 ##############################Search for torrents
