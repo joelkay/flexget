@@ -66,8 +66,8 @@ tasks:
         trakt_list:
           account: '{{ secrets.trakt.account }}' 
           list: Following
-          type: episodes
-
+          type: episodes #grab episodes
+          
     exists_series: 
       - /media/pi/DeepStorage/Incomplete
       - /media/pi/DeepStorage/TVShows
