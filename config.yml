@@ -1,5 +1,5 @@
 web_server: no
-
+secrets: secrets.yml
 templates:
   global:
     free_space:
@@ -56,8 +56,8 @@ tasks:
         - next_series_episodes: yes
       from:
         - search_rss: https://zooqle.com/search?q={{search_term}}&fmt=rss 
-        - search_rss: https://immortalseed.me/rss.php?secret_key=f54e0e2cbc6d5eccb714e944c9629f70&feedtype=download&timezone=-12&showrows=100&categories=8,9
-        - search_rss: http://showrss.info/user/3786.rss?magnets=true&namespaces=true&name=null&quality=null&re=null
+        - search_rss: '\{{ secrets.rss.site1 }}' 
+        - search_rss: '\{{ secrets.rss.site2 }}'
         
     exists_series: 
       - /media/pi/DeepStorage/Incomplete
