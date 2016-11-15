@@ -1,8 +1,12 @@
 secrets: secrets.yml
 schedules:
-  - tasks: Series
+  - tasks: grab_series
     interval:
       minutes: 15
+
+  - tasks: get_series
+    interval:
+      minutes: 30
 
 templates:
   tv:
@@ -86,14 +90,20 @@ templates:
 
     ##############################Search for torrents
     
+    
+
+tasks:
+  grab_series:
+    template: tv
+    priority: 1
+
+  get_series:
+    template: tv
+    priority: 2
+
     discover:
       what: 
         - entry_list: series
       from:
         - search_rss: https://zooqle.com/search?q={{search_term}}&fmt=rss 
         - search_rss: '{{ secrets.rss.site2 }}'
-
-tasks:
-  Series:
-    template: tv
-    priority: 1
