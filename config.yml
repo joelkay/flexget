@@ -42,9 +42,8 @@ templates:
         - search_rss: '{{ secrets.rss.site2 }}'
 
     #################################Reject all series that exist
-    exists_series:
-      allow_different_qualities: yes 
-      path: '/media/pi/DeepStorage/TVShows/{{series_name}}'
+    exists_series: 
+      path: '/media/pi/DeepStorage/TVShows'
         #dont duplicate if we have it already
 
     regexp:
