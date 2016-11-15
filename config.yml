@@ -50,7 +50,10 @@ tasks:
   grab_series:
 
     thetvdb_lookup: yes
-    
+
+    accept_all: yes
+    set_series_begin: yes
+
     exists_series: 
       - /media/pi/DeepStorage/Incomplete
       - /media/pi/DeepStorage/TVShows
@@ -59,12 +62,10 @@ tasks:
     discover:
       what:
         - next_trakt_episodes:
-          account: '{{ secrets.trakt.account }}'
-          list: Following
-          type: shows #grab shows
-        accept_all: yes
-        set_series_begin: yes
-
+            account: '{{ secrets.trakt.account }}'
+            list: Following
+            type: shows #grab shows
+            
       from:
         - search_rss: https://zooqle.com/search?q={{search_term}}&fmt=rss 
         - search_rss: '{{ secrets.rss.site1 }}' 
