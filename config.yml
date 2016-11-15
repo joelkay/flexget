@@ -31,6 +31,9 @@ templates:
           type: shows
           strip_dates: yes
 
+      list_add:
+        - entry_list: series
+
     #################################Reject all series that exist
     exists_series:
       allow_different_qualities: yes 
@@ -85,8 +88,7 @@ templates:
     
     discover:
       what: 
-        - next_series_episodes:
-            from_start: yes
+        - entry_list: series
       from:
         - search_rss: https://zooqle.com/search?q={{search_term}}&fmt=rss 
         - search_rss: '{{ secrets.rss.site2 }}'
