@@ -173,8 +173,9 @@ tasks:
 ##############################Search for torrents
     discover:
       what:
-        - next_series_episodes:
-            backfill: yes
+        - next_trakt_episodes:
+           account: '{{ secrets.trakt.account }}'
+           list: Following
       from:
         - search_rss: https://zooqle.com/search?q={{search_term}}&fmt=rss 
         - search_rss: '{{ secrets.rss.site1 }}' 
