@@ -57,11 +57,11 @@ tasks:
     accept_all: yes
     set_series_begin: yes
 
-    trakt_remove:
+    list_remove:
       account: '\{{ secrets.trakt.account }}'
       list: Following
 
-    trakt_add:
+    list_add:
       account: '\{{ secrets.trakt.account }}'
       list: Following
       type: shows
@@ -85,11 +85,11 @@ tasks:
 
     discover:
       what:
-        - emit_series: yes
+        - next_series_episodes: yes
       from:
         - search_rss: https://zooqle.com/search?q={{search_term}}&fmt=rss 
-        - search_rss: '\{{ secrets.rss.site1 }}' 
-        - search_rss: '\{{ secrets.rss.site2 }}'
+        - search_rss: '{{ secrets.rss.site1 }}' 
+        - search_rss: '{{ secrets.rss.site2 }}'
 
     series:
       settings:
