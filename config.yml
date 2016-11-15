@@ -147,7 +147,6 @@ tasks:
   grab_series:
 
     thetvdb_lookup: yes
-
     set_series_begin: yes
 
 ##############################Grab Series from trakt
@@ -166,10 +165,11 @@ tasks:
 
 
 #################################Reject all series that exist
-    exists_series: 
-        - '/media/pi/DeepStorage/Incomplete/{{series_name}}'
-        - '/media/pi/DeepStorage/TVShows/{{series_name}}'
-      allow_different_qualities: yes
+    exists_series:
+      allow_different_qualities: yes 
+      - '/media/pi/DeepStorage/Incomplete/{{series_name}}'
+      - '/media/pi/DeepStorage/TVShows/{{series_name}}'
+      
         #dont duplicate if we have it already
    
 ##############################Search for torrents
