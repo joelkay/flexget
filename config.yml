@@ -39,7 +39,7 @@ templates:
         - next_series_episodes: yes
       from:
         - search_rss: https://zooqle.com/search?q={{search_term}}&fmt=rss 
-        - search_rss: '{{ secrets.rss.site2 }}'
+        - search_rss: https://torrentz2.eu/search?f={{search_term}}
 
     #################################Reject all series that exist
     exists_series: 
