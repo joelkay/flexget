@@ -84,10 +84,10 @@ templates:
       max: 3000
       strict: no
 
-    #pushbullet:
-      #apikey: PUSHBULLET_API_KEY
-      #title: "[F](/F) {{series_name}} {{series_id}}"
-      #body: "{{title}}\n\nSize: {{content_size}}MB"
+    pushbullet:
+      apikey: '{{ secrets.pushbullet.key }}'
+      title: "[F](/F) {{series_name}} {{series_id}}"
+      body: "{{title}}\n\nSize: {{content_size}}MB"
 
 tasks:
   grab_series:
