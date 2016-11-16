@@ -39,7 +39,7 @@ templates:
         - next_series_episodes: yes
       from:
         - search_rss: https://zooqle.com/search?q={{search_term}}&fmt=rss 
-        - search_rss: https://torrentz2.eu/search?f={{search_term}}
+        #- search_rss: alpha reign :D
 
     #################################Reject all series that exist
     exists_series: 
@@ -86,7 +86,7 @@ templates:
 
     pushbullet:
       apikey: '{{ secrets.pushbullet.key }}'
-      title: "[F](/F) {{series_name}} {{series_id}}"
+      title: "Downloading {{series_name}} {{series_id}}"
       body: "{{title}}\n\nSize: {{content_size}}MB"
 
 tasks:
