@@ -2,10 +2,10 @@ secrets: secrets.yml
 schedules:
   - tasks: sync-trakt
     interval:
-      minutes: 10
+      hours: 12
   - tasks: grab_series
     interval:
-      minutes: 15
+      hours: 1
 templates:
   tv:
 
