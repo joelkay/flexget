@@ -19,7 +19,7 @@ templates:
     
     configure_series:
       settings:
-        quality: webdl|hdtv|webrip h264 720p 1080p
+        quality: webdl|hdtv|webrip h264 x264 x265 720p 1080p
         propers: no
         identified_by: ep
         set:
