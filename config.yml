@@ -39,6 +39,7 @@ templates:
         - next_series_episodes: yes
       from:
         - search_rss: https://zooqle.com/search?q={{search_term}}&fmt=rss 
+        - search_rss: {{ secrets.rss.site3 }} #HoT
         #- search_rss: alpha reign :D
 
     #################################Reject all series that exist
