@@ -20,6 +20,7 @@ templates:
     configure_series:
       settings:
         #quality: webdl|hdtv|webrip h264 20p 1080p
+        upgrade: yes #just take any qualities and keep getting better ones
         propers: no
         identified_by: ep
         set:
