@@ -48,6 +48,7 @@ templates:
     exists_series: 
       path: '/media/pi/DeepStorage/TVShows'
         #dont duplicate if we have it already
+        allow_different_qualities: better #unless we can grab a better version
 
     regexp:
       reject:
