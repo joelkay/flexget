@@ -2,13 +2,12 @@ secrets: secrets.yml
 schedules:
   - tasks: sync-trakt
     interval:
-      hours: 12
+      hours: 24
   - tasks: grab_series
     interval:
       hours: 1
 templates:
   tv:
-
     thetvdb_lookup: yes
 
     deluge:
@@ -26,7 +25,7 @@ templates:
         set:
             content_filename: "{{ series_name }} - {{ series_id }} - {{ tvdb_ep_name|default('Unknown') }}  - {{ quality|upper }}"
             movedone: /media/pi/DeepStorage/TVShows/{{series_name}}/Season {{tvdb_season}}/
-            removeatratio: 0.5
+            removeatratio: 1.0
       from:
         trakt_list:
           account: '{{ secrets.trakt.account }}'
@@ -40,6 +39,7 @@ templates:
         - next_series_episodes: yes
       from:
         - search_rss: https://zooqle.com/search?q={{search_term}}&fmt=rss 
+        - search_rss: '{{ secrets.rss.site2 }}' #showRSS
         - search_rss: '{{ secrets.rss.site3 }}' #HoT
         - search_rss: '{{ secrets.rss.site4 }}' #HD4F
         #- search_rss: alpha reign :D
@@ -66,7 +66,7 @@ templates:
         - \bASAP\b: {from: title}  
 
     torrent_alive:
-      min_seeds: 10
+      min_seeds: 5
       reject_for: 1 hours
 
     content_filter:
@@ -83,8 +83,8 @@ templates:
         - '*.wmv' 
 
     content_size:
-      min: 400
-      max: 3000
+      min: 200
+      max: 4000
       strict: no
 
     pushbullet:
