@@ -1,4 +1,5 @@
 secrets: secrets.yml
+
 schedules:
   - tasks: sync-trakt
     interval:
@@ -6,6 +7,18 @@ schedules:
   - tasks: grab_series
     interval:
       hours: 1
+      
+#irc:
+#  is: 
+#    tracker_file: 'is.tracker' #immortal seed
+#    nickname: 'jsqribe' #make sure to check naming conventions before joining
+#    nickserv_password: '{{ secrets.irc.isnickserv }}'
+#    port: 7011
+#    rsskey: '{{ secrets.rss.is}}'
+#    task: get_entry
+#   channels: ["#immortal"]      
+            
+      
 templates:
   tv:
     thetvdb_lookup: yes
