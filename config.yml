@@ -1,10 +1,10 @@
 secrets: secrets.yml
 
 schedules:
-  - tasks: sync-trakt
+  - tasks: [sync-trakt]
     interval:
       hours: 24
-  - tasks: grab_series
+  - tasks: [grab_series]
     interval:
       hours: 1
       
@@ -36,9 +36,9 @@ templates:
         propers: no
         identified_by: ep
         set:
-            content_filename: "{{ series_name }} - {{ series_id }} - {{ tvdb_ep_name|default('Unknown') }}  - {{ quality|upper }}"
-            movedone: /media/pi/DeepStorage/TVShows/{{series_name}}/Season {{tvdb_season}}/
-            removeatratio: 1.0
+          content_filename: "{{ series_name }} - {{ series_id }} - {{ tvdb_ep_name|default('Unknown') }}  - {{ quality|upper }}"
+          movedone: /media/pi/DeepStorage/TVShows/{{series_name}}/Season {{tvdb_season}}/
+          removeatratio: 1.0
       from:
         trakt_list:
           account: '{{ secrets.trakt.account }}'
