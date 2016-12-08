@@ -102,9 +102,9 @@ templates:
       strict: no
 
     pushbullet:
-      apikey: '{{ secrets.pushbullet.key }}'
+      api_key: '{{ secrets.pushbullet.key }}'
       title: "Downloading {{series_name}} {{series_id}}"
-      body: "{{title}}\n\nSize: {{content_size}}MB"
+      message: "{{title}}\n\nSize: {{content_size}}MB"
 
 tasks:
   grab_series:
