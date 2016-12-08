@@ -1,10 +1,10 @@
 secrets: secrets.yml
 
 schedules:
-  - tasks: [sync-trakt]
+  - tasks: sync-trakt
     interval:
       hours: 24
-  - tasks: [grab_series]
+  - tasks: grab_series
     interval:
       hours: 1
       
