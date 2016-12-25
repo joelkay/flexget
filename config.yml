@@ -32,7 +32,7 @@ templates:
     configure_series:
       settings:
         #quality: webdl|hdtv|webrip h264 20p 1080p
-        upgrade: yes #just take any qualities and keep getting better ones
+        upgrade: no 
         propers: no
         identified_by: ep
         set:
@@ -54,7 +54,7 @@ templates:
         - search_rss: https://zooqle.com/search?q={{search_term}}&fmt=rss 
         - search_rss: '{{ secrets.rss.site2 }}' #showRSS
         - search_rss: '{{ secrets.rss.site3 }}' #AlphaReign
-        
+
     #################################Reject all series that exist
     exists_series: 
       path: '/media/pi/DeepStorage/TVShows'
