@@ -53,10 +53,8 @@ templates:
       from:
         - search_rss: https://zooqle.com/search?q={{search_term}}&fmt=rss 
         - search_rss: '{{ secrets.rss.site2 }}' #showRSS
-        #- search_rss: '{{ secrets.rss.site3 }}' #HoT
-        #- search_rss: '{{ secrets.rss.site4 }}' #HD4F
-        #- search_rss: alpha reign :D
-
+        - search_rss: '{{ secrets.rss.site3 }}' #AlphaReign
+        
     #################################Reject all series that exist
     exists_series: 
       path: '/media/pi/DeepStorage/TVShows'
